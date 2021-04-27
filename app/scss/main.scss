@@ -1,0 +1,106 @@
+// @use "abstract/variables";
+// Variables
+$cta-text-color: hsl(356, 100%, 66%);
+$cta-hover-bg: hsl(355, 100%, 74%);
+$title-color: hsl(208, 49%, 24%);
+
+
+$text-color: hsl(0, 0%, 100%);
+$footer-text: hsl(240, 2%, 79%);
+$body-copy: hsl(207, 13%, 34%);
+$footer-bg: hsl(240, 10%, 16%);
+
+// Background gradient - Intro/CTA mobile nav:
+$s-light-red: hsl(13, 100%, 72%);
+$light-red: hsl(353, 100%, 62%);
+
+// Background gradient - body:
+$dark-gray-blue: hsl(237, 17%, 21%);
+$dark-desat-blue: hsl(237, 23%, 32%);
+
+// CTA/Footer  Ubuntu,  Copy/Text Overpass
+$cta-f: 'Ubuntu', sans-serif;
+$copy-f: "Overpass", sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $copy-f;
+  color: $text-color;
+}
+
+//main layout
+
+
+// intro section
+.intro {
+  background:  url(../../public/images/bg-pattern-intro.svg) no-repeat, 
+    linear-gradient(90deg, $s-light-red 0%, $light-red 80%);
+  background-size: cover, auto;
+  
+  border-radius: 0 0 0 20%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 3rem;
+
+  .burger {
+    height: 1.2rem;
+    width: 2rem;
+  }
+}
+
+.intro-cta {
+  h1 {
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .buttons {
+    margin-bottom: 5rem;
+    .start {
+      background-color: $text-color;
+      color: $cta-text-color;
+      &:hover {
+        background-color: $cta-hover-bg;
+        color: $text-color;
+      }
+    }
+    .learn {
+      border: 1px solid $text-color;
+      background-color: transparent;
+      color: $text-color;
+      &:hover {
+        background-color: $text-color;
+        color: $cta-text-color;
+      }
+    }
+
+  }
+}
+
+// Utility
+.btn {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin-left: 1rem;
+  font-family: $cta-f;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}

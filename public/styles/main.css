@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+.intro {
+  background: url(../../public/images/bg-pattern-intro.svg) no-repeat, linear-gradient(90deg, #ff8f70 0%, #ff3d54 80%);
+  background-size: cover, auto;
+  border-radius: 0 0 0 20%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 3rem;
+}
+.header .burger {
+  height: 1.2rem;
+  width: 2rem;
+}
+
+.intro-cta h1 {
+  font-size: 1.8rem;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.intro-cta p {
+  font-size: 1.2;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.intro-cta .buttons {
+  margin-bottom: 5rem;
+}
+.intro-cta .buttons .start {
+  background-color: white;
+  color: #ff525d;
+}
+.intro-cta .buttons .start:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+.intro-cta .buttons .learn {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.intro-cta .buttons .learn:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+.btn {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin-left: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+/*# sourceMappingURL=main.css.map */
