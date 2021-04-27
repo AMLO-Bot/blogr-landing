@@ -8,7 +8,7 @@ The designs were created to the following widths:
 - Desktop: 1440px
 
 ## Colors
-
+    
 ### Primary
 
 - Light red (CTA text): hsl(356, 100%, 66%)
